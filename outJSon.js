@@ -2,7 +2,7 @@ const fs = require('fs');
 const readline = require('readline');
 const r = [];
 async function processLineByLine() {
-    const fileStream = fs.createReadStream('bed.txt');
+    const fileStream = fs.createReadStream('./data/bed2.txt');
 
     const rl = readline.createInterface({
         input: fileStream,
@@ -27,7 +27,7 @@ async function processLineByLine() {
     if (!fs.existsSync("./data")) fs.mkdirSync("./data");
     //write data to json
 
-    fs.writeFileSync(`./data/bed.json`, JSON.stringify(r), {
+    fs.writeFileSync(`./data/bed2.json`, JSON.stringify(r), {
         flag: "w"
     });
     console.log(`Saved as data/bed.json`);
