@@ -4,6 +4,7 @@ const bedQuery = require('./lib/bedQuery');
 const bedQuery_excep = require('./lib/bedQuery_excep');
 let p = fs.readFileSync('./data/bed.json');
 let p_e = fs.readFileSync('./data/bed_extrahandle.json');
+let fileName = 'bedInfo';
 p = JSON.parse(p);
 p_e = JSON.parse(p_e);
 (async () => {
@@ -15,7 +16,7 @@ p_e = JSON.parse(p_e);
 
   let info = [];
   let data = {};
-  page.on("request", request => {
+  /*page.on("request", request => {
     if (
       ["image", "font"].indexOf(
         request.resourceType()
@@ -25,13 +26,13 @@ p_e = JSON.parse(p_e);
     } else {
       request.continue();
     }
-  });
+  });*/
 
   for (let i = 0; i < p.length; i++) {
     console.log("going to " + p[i]['url']);
     await page.goto(p[i]['url'], {
-      waitUntil: "networkidle2",
-      timeout: 0
+      waitUntil: "domcontentloaded",
+
     });
     data = {
       hosp: p[i]['hosp'],
@@ -39,6 +40,7 @@ p_e = JSON.parse(p_e);
       info: await page.evaluate(bedQuery)
 
     }
+    console.log(data);
     info.push(data);
   }
   for (let i = 0; i < p_e.length; i++) {
@@ -57,9 +59,9 @@ p_e = JSON.parse(p_e);
   if (!fs.existsSync("./data")) fs.mkdirSync("./data");
   //write data to json
 
-  fs.writeFileSync(`./data/d.json`, JSON.stringify(info), {
+  fs.writeFileSync('./data/' + fileName + '.json', JSON.stringify(info), {
     flag: "w"
   });
-  console.log(`Saved as data/d.json`);
+  console.log('Saved as data/' + fileName + '.json');
   await browser.close();
 })();
