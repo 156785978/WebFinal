@@ -1,7 +1,7 @@
 const express = require('express');
 const app = express();
 const importdata = require('./bedInfo.json');
-const parser = require('./hospitalParser');
+//const parser = require('./hospitalParser');
 app.use(express.json());
 app.get('/', (req, res) => {
     res.send(importdata);
