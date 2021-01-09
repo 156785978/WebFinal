@@ -18,7 +18,7 @@ console.log('yo dawgs, now listening to port 3000');
 
 const express = require('express');
 const app = express();
-const importdata = require('./data/bedInfo.json');
+const importdata = require('./bedInfo.json');
 app.use(express.json());
 app.get('/', (req, res) => {
     res.send(importdata);
