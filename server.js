@@ -18,10 +18,10 @@ console.log('yo dawgs, now listening to port 3000');
 
 const express = require('express');
 const app = express();
-const fs = require('fs');
+const importdata = require('./data/bedInfo.json');
 app.use(express.json());
 app.get('/', (req, res) => {
-    res.send('help');
+    res.send(importdata);
 })
 
 const port = process.env.PORT || "2000";
