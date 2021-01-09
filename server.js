@@ -19,6 +19,7 @@ console.log('yo dawgs, now listening to port 3000');
 const express = require('express');
 const app = express();
 const importdata = require('./bedInfo.json');
+const parser = require('./hospitalParser');
 app.use(express.json());
 app.get('/', (req, res) => {
     res.send(importdata);
@@ -26,3 +27,5 @@ app.get('/', (req, res) => {
 
 const port = process.env.PORT || "2000";
 app.listen(port, () => console.log('server started on port ' + port));
+const time = 1000 * 60 * 5;
+setInterval(parser, time);
