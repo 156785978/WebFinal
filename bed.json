@@ -1,0 +1,137 @@
+[{
+    "hosp": "國立臺灣大學醫學院附設醫院",
+    "city": "台北市",
+    "url": "https://www.ntuh.gov.tw/ntuh/EmptyBed.action"
+}, {
+    "hosp": "三軍總醫院",
+    "city": "台北市",
+    "url": "https://www1.ndmctsgh.edu.tw/tsghnhibed/admnhibed.asp"
+}, {
+    "hosp": "臺北榮民總醫院",
+    "city": "台北市",
+    "url": "https://www6.vghtpe.gov.tw/PTSEV/bedCount.do"
+}, {
+    "hosp": "馬偕紀念醫院",
+    "city": "台北市",
+    "url": "https://oap2.mmh.org.tw/admbed/bed/1"
+}, {
+    "hosp": "新光吳火獅紀念醫院",
+    "city": "台北市",
+    "url": "http://web.skh.org.tw/sickbed/default.aspx"
+}, {
+    "hosp": "奇美醫院",
+    "city": "台南市",
+    "url": "http://www.chimei.org.tw/%E4%BD%94%E5%BA%8A%E7%8E%87%E6%9F%A5%E8%A9%A2/%E4%BD%94%E5%BA%8A%E7%8E%87%E6%9F%A5%E8%A9%A2.aspx?ihospital=10&ffloor="
+}, {
+    "hosp": "基督復臨安息日會醫療財團法人臺安醫院",
+    "city": "台北市",
+    "url": "https://www.tahsda.org.tw/Register/GetBedNum.php"
+}, {
+    "hosp": "童綜合醫院",
+    "city": "台中市",
+    "url": "https://zh-tw.sltung.com.tw/tung/OPD/bmonline.htm"
+}, {
+    "hosp": "佛教慈濟綜合醫院臺中分院",
+    "city": "台中市",
+    "url": "https://app.tzuchi.com.tw/tzuchi/AdmBedQry/BedQry.aspx?Hosp=TC"
+}, {
+    "hosp": "三軍總醫院松山分院附設民眾診療服務處",
+    "city": "台北市",
+    "url": "https://wwwv.tsgh.ndmctsgh.edu.tw/unit/20000/15694"
+}, {
+    "hosp": "臺北醫學大學附設醫院",
+    "city": "台北市",
+    "url": "http://219.87.146.148/ipd_bed/"
+}, {
+    "hosp": "振興醫療財團法人振興醫院",
+    "city": "台北市",
+    "url": "https://www.chgh.org.tw/Patient_Service_Detail.aspx?ArticleID=MjAxOTEwMDkwMDA3"
+}, {
+    "hosp": "行天宮醫療志業醫療財團法人恩主公醫院",
+    "city": "新北市",
+    "url": "https://ws.eck.org.tw/ECK_RegChronic/ECK_RegChronic/ECK_BEDLIST.aspx"
+}, {
+    "hosp": "衛生福利部臺北醫院",
+    "city": "新北市",
+    "url": "http://www.ptph.gov.tw/ER/Hbed.aspx"
+}, {
+    "hosp": "衛生福利部雙和醫院",
+    "city": "新北市",
+    "url": "https://shh.tmu.edu.tw/OldShhorg/page/ShhAllBed.aspx"
+}, {
+    "hosp": "國立臺灣大學醫學院附設醫院新竹分院",
+    "city": "新竹市",
+    "url": "https://reg.ntuh.gov.tw/NTUHEmptyBedCount/NTUHEmptyBedCountT4.aspx"
+}, {
+    "hosp": "東元醫療社團法人東元綜合醫院",
+    "city": "新竹縣",
+    "url": "https://w3.tyh.com.tw/bedlist/"
+}, {
+    "hosp": "財團法人羅許基金會羅東博愛醫院",
+    "city": "宜蘭縣",
+    "url": "https://www.pohai.org.tw/sickbed.php"
+}, {
+    "hosp": "國軍臺中總醫院附設民眾診療服務處",
+    "city": "台中市",
+    "url": "https://web-reg-server.803.org.tw/sickbednum/803bed.asp"
+}, {
+    "hosp": "光田醫療社團法人光田綜合醫院",
+    "city": "台中市",
+    "url": "http://www.ktgh.com.tw/BednoInfo_Show.asp?CatID=80&ModuleType=Y"
+}, {
+    "hosp": "仁愛醫療財團法人台中仁愛醫院",
+    "city": "台中市",
+    "url": "https://www.jah.org.tw/sickbed/index2.asp?m=99&m1=5&m2=457"
+}, {
+    "hosp": "衛生福利部臺中醫院",
+    "city": "台中市",
+    "url": "http://www02.taic.mohw.gov.tw/bed/asp/bed.asp"
+}, {
+    "hosp": "林新醫療社團法人林新醫院",
+    "city": "台中市",
+    "url": "http://www.lshosp.com.tw/%E5%B0%B1%E9%86%AB%E6%8C%87%E5%8D%97/%E7%97%85%E5%BA%8A%E4%B8%80%E8%A6%BD%E8%A1%A8/"
+}, {
+    "hosp": "秀傳醫療社團法人秀傳紀念醫院",
+    "city": "彰化縣",
+    "url": "https://www.scmh.org.tw/bedrate.aspx?Kind=2"
+}, {
+    "hosp": "國立臺灣大學醫學院附設醫院雲林分院",
+    "city": "雲林縣",
+    "url": "https://reg.ntuh.gov.tw/NTUHEmptyBedCount/NTUHEmptyBedCountY0.aspx"
+}, {
+    "hosp": "天主教若瑟醫療財團法人若瑟醫院",
+    "city": "雲林縣",
+    "url": "http://www.stjoho.org.tw/www2012/querybed.aspx"
+}, {
+    "hosp": "戴德森醫療財團法人嘉義基督教醫院",
+    "city": "嘉義市",
+    "url": "http://www.cych.org.tw/cychweb/er/ipd_news.aspx"
+}, {
+    "hosp": "郭綜合醫院",
+    "city": "台南市",
+    "url": "http://hosp.kgh.com.tw:8112/VICU/bed.aspx"
+}, {
+    "hosp": "屏基醫療財團法人屏東基督教醫院",
+    "city": "屏東縣",
+    "url": "http://www.ptch.org.tw/bed/info.asp"
+}, {
+    "hosp": "寶建醫療社團法人寶建醫院",
+    "city": "屏東縣",
+    "url": "http://www.paochien.com.tw/twuse/bedInfo"
+}, {
+    "hosp": "臺灣基督教門諾會醫療財團法人門諾醫院",
+    "city": "花蓮縣",
+    "url": "https://www.mch.org.tw/Docs/564/Default.aspx"
+}, {
+    "hosp": "林新醫療社團法人烏日林新醫院",
+    "city": "台中市",
+    "url": "http://wlshosp.org.tw/%E5%B0%B1%E9%86%AB%E6%8C%87%E5%8D%97/%E7%97%85%E5%BA%8A%E4%B8%80%E8%A6%BD%E8%A1%A8/"
+}, {
+    "hosp": "彰化秀傳紀念醫院",
+    "city": "彰化縣",
+    "url": "https://www.scmh.org.tw/bedrate.aspx?Kind=2"
+}, {
+    "hosp": "衛生福利部臺東醫院",
+    "city": "台東縣",
+    "url": "https://www.tait.mohw.gov.tw/?aid=306"
+}]
