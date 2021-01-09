@@ -30,7 +30,7 @@ async function processLineByLine() {
     fs.writeFileSync(`./data/bed2.json`, JSON.stringify(r), {
         flag: "w"
     });
-    console.log(`Saved as data/bed.json ya`);
+    console.log(`Saved as data/bed.json`);
 }
 
 processLineByLine();
