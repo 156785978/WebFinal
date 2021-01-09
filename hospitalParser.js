@@ -67,7 +67,7 @@ function hospitalParser() {
     fs.writeFileSync(fileName + '.json', JSON.stringify(info), {
       flag: "w"
     });
-    console.log('Saved as ' + fileName + '.json');
+    console.log('Saved as   ' + fileName + '.json');
     await browser.close();
   })();
 }
