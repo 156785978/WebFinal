@@ -10,7 +10,11 @@ function hospitalParser() {
   p_e = JSON.parse(p_e);
   (async () => {
     const browser = await puppeteer.launch({
-      headless: true
+      args: [
+        '--no-sandbox',
+        '--disable-setuid-sandbox',
+      ],
+
     });
 
     const page = await browser.newPage();
