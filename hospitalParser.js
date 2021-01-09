@@ -59,7 +59,7 @@ function hospitalParser() {
     }
     //if (!fs.existsSync("./data")) fs.mkdirSync("./data");
     //write data to json
-    info.push('haiya');
+    //info.push('haiya')
     fs.writeFileSync(fileName + '.json', JSON.stringify(info), {
       flag: "w"
     });
