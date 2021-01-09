@@ -3,8 +3,8 @@ function hospitalParser() {
   const fs = require("fs");
   const bedQuery = require('./lib/bedQuery');
   const bedQuery_excep = require('./lib/bedQuery_excep');
-  let p = fs.readFileSync('./data/bed.json');
-  let p_e = fs.readFileSync('./data/bed_extrahandle.json');
+  let p = fs.readFileSync('./bed.json');
+  let p_e = fs.readFileSync('./bed_extrahandle.json');
   let fileName = 'bedInfo';
   p = JSON.parse(p);
   p_e = JSON.parse(p_e);
