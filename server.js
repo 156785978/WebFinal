@@ -11,4 +11,4 @@ const port = process.env.PORT || "2000";
 app.listen(port, () => console.log('server started on port ' + port));
 const time = 1000 * 60 * 5;
 //parser();
-setInterval(parser, time);
+//setInterval(parser, time);
