@@ -2,7 +2,10 @@
   "name": "webfinal",
   "version": "1.0.0",
   "description": "It's a web design final project",
-  "main": "pute.js",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
   "directories": {
     "lib": "lib"
   },
