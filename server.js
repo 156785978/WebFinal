@@ -23,3 +23,6 @@ app.use(express.json());
 app.get('/', (req, res) => {
     res.send('help');
 })
+
+const port = process.env.PORT || "2000";
+app.listen(port, () => console.log('server started on port ' + port));
