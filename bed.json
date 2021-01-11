@@ -111,10 +111,6 @@
     "city": "台南市",
     "url": "http://hosp.kgh.com.tw:8112/VICU/bed.aspx"
 }, {
-    "hosp": "屏基醫療財團法人屏東基督教醫院",
-    "city": "屏東縣",
-    "url": "http://www.ptch.org.tw/bed/info.asp"
-}, {
     "hosp": "寶建醫療社團法人寶建醫院",
     "city": "屏東縣",
     "url": "http://www.paochien.com.tw/twuse/bedInfo"
