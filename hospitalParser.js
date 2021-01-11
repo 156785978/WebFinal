@@ -15,11 +15,8 @@ async function hospitalParser() {
         '--no-sandbox',
         '--disable-setuid-sandbox',
       ],
-
     });
-
     const page = await browser.newPage();
-
     let info = [];
     let data = {};
     /*page.on("request", request => {
@@ -33,19 +30,18 @@ async function hospitalParser() {
         request.continue();
       }
     });*/
-
     for (let i = 0; i < p.length; i++) {
       console.log("going to " + p[i]['url']);
       await page.goto(p[i]['url'], {
         waitUntil: "domcontentloaded",
-
+        timeout: 0
       });
       data = {
         hosp: p[i]['hosp'],
         city: p[i]['city'],
         info: await page.evaluate(bedQuery)
+      };
 
-      }
       console.log(data);
       info.push(data);
     }
@@ -62,18 +58,17 @@ async function hospitalParser() {
       }
       info.push(data);
     }
-    //if (!fs.existsSync("./data")) fs.mkdirSync("./data");
-    //write data to json
-    //info.push('haiya')
+
     fs.writeFileSync(fileName + '.json', JSON.stringify(info), {
       flag: "w"
     });
     console.log('Saved as   ' + fileName + '.json');
     await browser.close();
+    //console.log(info);
     return info;
   })();
   console.log(obj);
   return obj;
 }
-
+hospitalParser();
 module.exports = hospitalParser;
