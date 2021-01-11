@@ -36,14 +36,19 @@ async function hospitalParser() {
         waitUntil: "domcontentloaded",
         timeout: 0
       });
-      data = {
-        hosp: p[i]['hosp'],
-        city: p[i]['city'],
-        info: await page.evaluate(bedQuery)
+      try {
+        data = {
+          hosp: p[i]['hosp'],
+          city: p[i]['city'],
+          info: await page.evaluate(bedQuery)
+        };
+        console.log(data);
+        info.push(data);
+      } catch (e) {
+        console.log('load fail')
       };
 
-      console.log(data);
-      info.push(data);
+
     }
     for (let i = 0; i < p_e.length; i++) {
       console.log("going to " + p[i]['url']);

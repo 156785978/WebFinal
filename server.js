@@ -14,8 +14,7 @@ app.get('/', (req, res) => {
 const port = process.env.PORT || "2000";
 var s = app.listen(port, () => console.log('server started on port ' + port));
 const time = 1000 * 60 * 5;
-//}
-//setInterval(update, time);
+
 setInterval(function () {
     (async () => {
 
