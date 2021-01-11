@@ -7,8 +7,11 @@ const cors = require('cors');
 
 
 app.use(express.json());
-app.get('/', (req, res) => {
-    res.send("importdata_ori");
+app.use(cors({
+    origin: '*'
+}));
+app.get('/bedinfo.json', (req, res) => {
+    res.json(importdata_ori);
 })
 
 const port = process.env.PORT || "2000";
