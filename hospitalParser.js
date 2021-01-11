@@ -1,4 +1,4 @@
-function hospitalParser() {
+async function hospitalParser() {
   const puppeteer = require("puppeteer");
   const fs = require("fs");
   const bedQuery = require('./lib/bedQuery');
@@ -8,7 +8,8 @@ function hospitalParser() {
   let fileName = 'bedInfo';
   p = JSON.parse(p);
   p_e = JSON.parse(p_e);
-  (async () => {
+
+  let obj = await (async () => {
     const browser = await puppeteer.launch({
       args: [
         '--no-sandbox',
@@ -69,7 +70,10 @@ function hospitalParser() {
     });
     console.log('Saved as   ' + fileName + '.json');
     await browser.close();
+    return info;
   })();
+  console.log(obj);
+  return obj;
 }
 
 module.exports = hospitalParser;
