@@ -34,7 +34,7 @@ async function hospitalParser() {
       console.log("going to " + p[i]['url']);
       await page.goto(p[i]['url'], {
         waitUntil: "domcontentloaded",
-        timeout: 0
+
       });
       try {
         data = {
