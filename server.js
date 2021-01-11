@@ -22,7 +22,7 @@ setInterval(function () {
         console.log('data:', importdata);
         s.close(() => console.log('close'));
         const app = express();
-        app.get('/', (req, res) => {
+        app.get('/bedInfo', (req, res) => {
             res.send(importdata);
         })
         s = app.listen(port, () => console.log('server started on port ' + port));
