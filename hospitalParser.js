@@ -19,17 +19,7 @@ async function hospitalParser() {
     const page = await browser.newPage();
     let info = [];
     let data = {};
-    /*page.on("request", request => {
-      if (
-        ["image", "font"].indexOf(
-          request.resourceType()
-        ) !== -1
-      ) {
-        request.abort();
-      } else {
-        request.continue();
-      }
-    });*/
+
     for (let i = 0; i < p.length; i++) {
       console.log("going to " + p[i]['url']);
       await page.goto(p[i]['url'], {
@@ -45,7 +35,7 @@ async function hospitalParser() {
         console.log(data);
         info.push(data);
       } catch (e) {
-        console.log('load fail')
+        console.log('load fail');
       };
 
 
@@ -54,14 +44,18 @@ async function hospitalParser() {
       console.log("going to " + p[i]['url']);
       await page.goto(p_e[i]['url'], {
         waitUntil: "networkidle2",
-        timeout: 0
+
       });
-      data = {
-        hosp: p_e[i]['hosp'],
-        city: p_e[i]['city'],
-        info: await page.evaluate(bedQuery_excep)
+      try {
+        data = {
+          hosp: p_e[i]['hosp'],
+          city: p_e[i]['city'],
+          info: await page.evaluate(bedQuery_excep)
+        }
+        info.push(data);
+      } catch (e) {
+        console.log('load fail');
       }
-      info.push(data);
     }
 
     fs.writeFileSync(fileName + '.json', JSON.stringify(info), {
@@ -70,10 +64,11 @@ async function hospitalParser() {
     console.log('Saved as   ' + fileName + '.json');
     await browser.close();
     //console.log(info);
+    //info = JSON.stringify(info);
     return info;
   })();
   console.log(obj);
   return obj;
 }
-hospitalParser();
+//hospitalParser();
 module.exports = hospitalParser;

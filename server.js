@@ -3,7 +3,7 @@ const express = require('express');
 const app = express();
 const importdata_ori = require('./bedInfo.json');
 const parser = require('./hospitalParser');
-
+const cors = require('cors');
 
 
 app.use(express.json());
@@ -13,7 +13,7 @@ app.get('/', (req, res) => {
 
 const port = process.env.PORT || "2000";
 var s = app.listen(port, () => console.log('server started on port ' + port));
-const time = 1000 * 60 * 5;
+const time = 1000 * 60 * 1;
 
 setInterval(function () {
     (async () => {
@@ -22,8 +22,13 @@ setInterval(function () {
         console.log('data:', importdata);
         s.close(() => console.log('close'));
         const app = express();
-        app.get('/bedInfo', (req, res) => {
-            res.send(importdata);
+        app.use(express.json());
+        app.use(cors({
+            origin: '*'
+        }));
+
+        app.get('/bedinfo.json', (req, res) => {
+            res.json(importdata);
         })
         s = app.listen(port, () => console.log('server started on port ' + port));
 
